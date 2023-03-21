@@ -15,11 +15,11 @@ plt.imshow(img1)
 plt.figure()
 plt.imshow(img2)
 
-# Boyut sorgu
+# Shape
 print(img1.shape)
 print(img2.shape)
 """
-# Yeniden Boyutlandırma
+# Resize
 img1 = cv2.resize(img1,(600,600))
 img2 = cv2.resize(img2,(600,600))
 
@@ -34,7 +34,7 @@ plt.figure()
 plt.imshow(img2)
 
 
-# resim karıştırma
+# image blend
 blended = cv2.addWeighted(src1 = img1,alpha= 0.5, src2= img2,beta=0.5,gamma =0)
 plt.figure()
 plt.imshow(blended) 
