@@ -7,7 +7,7 @@ img= cv2.imread("datai_team.jpg",0)
 plt.figure(),plt.imshow(img, cmap="gray"),plt.axis("off"),plt.title("Orijinal"),plt.show()
 
 
-#erezyon
+# erosion
 kernel =np.ones((5,5),dtype= np.uint8)
 result =cv2.erode(img, kernel, iterations =1)
 
@@ -27,7 +27,7 @@ noise_img = whiteNoise + img
 plt.figure(),plt.imshow(noise_img, cmap="gray"),plt.axis("off"),plt.title("with whitenoise"),plt.show()
 
 
-#açılma
+# açılma
 opening = cv2.morphologyEx(noise_img.astype(np.float32),cv2.MORPH_OPEN,kernel)
 plt.figure(),plt.imshow(opening, cmap="gray"),plt.axis("off"),plt.title("opening"),plt.show()
 
