@@ -1,16 +1,16 @@
 import cv2
 import numpy as np
 
-# resmi içeri aktarma
+# import image
 img = cv2.imread("lenna.png")
-# resmi gösterme
+# show image
 cv2.imshow("Resim",img)
 
 
-# yatay birleştirme
+# horizontal join
 hor = np.hstack((img,img))
 cv2.imshow("Yatay",hor)
-# dikey birleştirme
+# vertical join
 ver = np.vstack((img,img))
 cv2.imshow("Dikey",ver)
 
