@@ -14,5 +14,3 @@ elif k== ord('s'): # s
     cv2.imwrite("messi_gray.png",img)
     cv2.destroyAllWindows()
     
-
-# %% Video içeri aktarma
